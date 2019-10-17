@@ -1,0 +1,35 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Simple landing page based on Maria Borysova's design.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.dev.js --watch",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMerencio/landing-page.git"
+  },
+  "author": "gmerencio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GMerencio/landing-page/issues"
+  },
+  "homepage": "https://github.com/GMerencio/landing-page#readme",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-merge": "^4.2.2"
+  }
+}
