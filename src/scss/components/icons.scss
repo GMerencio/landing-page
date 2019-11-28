@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #Icons
+\*------------------------------------*/
+
+@import 'fontello';
+
+.icon {
+  margin-left:  rem(7);
+  margin-right: rem(7);
+  color: $heliotrope;
+}
+
+.icon--disabled {
+  color: $blue-diamond;
+}

@@ -1,0 +1,76 @@
+/*------------------------------------*\
+  #Config
+\*------------------------------------*/
+ 
+$browser-context: 16;
+
+
+
+/*------------------------------------*\
+  #Mixins
+\*------------------------------------*/
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+
+
+/*------------------------------------*\
+  #Colors
+\*------------------------------------*/
+
+$white: #FFF;
+$alto: #CFCFCF;
+$mine-shaft: #3A3A3A;
+$heliotrope: #D36CF6;
+$blue-diamond: #52046C;
+$persian-blue: #1535E2;
+$outer-space: #333536;
+$dark-blue: #3D00E2;
+$purple-heart: #A22ACE;
+$pigment-indigo: #5D0085;
+
+
+
+/*------------------------------------*\
+  #Typography
+\*------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Coves Bold';
+    src: url('../font/Coves_Bold.otf');
+}
+
+@font-face {
+    font-family: 'CaviarDreams Bold';
+    src: url('../font/CaviarDreams_Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('../font/Futura_Bold.otf');
+}
+
+$main-font: 'Open Sans', sans-serif;
+
+
+
+/*------------------------------------*\
+  #Breakpoints
+\*------------------------------------*/
+
+$bp-medium: em(900);
+$bp-small: em(600);
+$bp-smaller: em(400);
+
+$medium-screen-and-below: "(max-width: #{$bp-medium})";
+$small-screen-and-below: "(max-width: #{$bp-small})";
+$smaller-screen-and-below: "(max-width: #{$bp-smaller})";

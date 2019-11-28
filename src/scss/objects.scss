@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #Text
+\*------------------------------------*/
+
+.main-heading {
+  font-size:    rem(38);
+  font-weight:  600;
+  color: $white;
+  margin-top: rem(86);
+  
+  @media #{$medium-screen-and-below} {
+      margin-top: 0;
+    }
+}

@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #Buttons
+\*------------------------------------*/
+
+.btn {
+  display: block;
+  padding-top: rem(12);
+  text-transform:   uppercase;
+  text-decoration:  none;
+  text-align:       center;
+  font-family:  $main-font;
+  font-size:    rem(20);
+  color: $mine-shaft;
+  background-color: $white;
+  border-radius: rem(27.5);
+  border: solid 1px #979797;
+  width: rem(299);
+  height: rem(55);
+}
