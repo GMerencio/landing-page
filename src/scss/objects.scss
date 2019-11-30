@@ -9,6 +9,50 @@
   margin-top: rem(86);
   
   @media #{$medium-screen-and-below} {
-      margin-top: 0;
-    }
+    margin-top: 0;
+  }
+}
+
+.features-heading {
+  margin-top: rem(100);
+  color: $persian-blue;
+  font-size:    rem(40);
+  font-family:  'Coves Bold', sans-serif;
+  font-weight:  400;
+  
+  @media #{$medium-screen-and-below} {
+    margin-top: rem(30);
+  }
+}
+
+
+
+/*------------------------------------*\
+  #Links
+\*------------------------------------*/
+
+.features-link {
+  text-transform:   uppercase;
+  text-decoration:  none;
+  margin-top: rem(53);
+  font-size:    rem(17);
+  font-weight:  600;
+  color: $dark-blue;
+}
+
+
+
+/*------------------------------------*\
+  #Images
+\*------------------------------------*/
+
+.img-features {
+  
+  @media #{$medium-screen-and-below} {
+    max-width: 50%;
+  }
+  
+  @media #{$smaller-screen-and-below} {
+    max-width: 60%;
+  }
 }

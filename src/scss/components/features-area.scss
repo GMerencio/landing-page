@@ -1,0 +1,123 @@
+/*------------------------------------*\
+  #Features-area
+\*------------------------------------*/
+
+.features-area {
+  padding-top: rem(150);
+  
+  @media #{$medium-screen-and-below} {
+    padding-top: 0;
+  }
+}
+
+  .features-area__row {
+    position: relative;
+    display: flex;
+    margin-bottom: rem(120);
+    
+    &::before {
+      position: absolute;
+    }
+    
+    &::after {
+      position: absolute;
+    }
+    
+    @media #{$medium-screen-and-below} {
+      flex-direction: column-reverse;
+      margin-bottom: rem(50);
+      align-items: center;
+    }
+  }
+  
+    .features-area__row:nth-of-type(odd) {
+      margin-left: rem(204);
+      
+      .features-area__col {
+        margin-right: rem(158);
+        
+        @media #{$medium-screen-and-below} {
+          margin-right: 0;
+        }
+      }
+      
+      @media #{$medium-screen-and-below} {
+        margin-left: 0;
+      }
+    }
+    
+    .features-area__row:nth-of-type(even) {
+      flex-direction: row-reverse;
+      
+      .features-area__col {
+        margin-left: rem(213);
+        
+        @media #{$medium-screen-and-below} {
+          margin-left: 0;
+        }
+      }
+      
+      .img-features {
+        position: relative;
+        left: -#{rem(35)};
+        
+        @media #{$medium-screen-and-below} {
+          left: 0;
+        }
+      }
+      
+      @media #{$medium-screen-and-below} {
+        flex-direction: column-reverse;
+      }
+    }
+    
+    .features-area__row:nth-of-type(1)::before {
+      content: url('../img/triangle-1.png');
+      top: -#{rem(136)};
+      
+      @media #{$medium-screen-and-below} {
+        content: none;
+      }
+    }
+    
+    .features-area__row:nth-of-type(1)::after {
+      content: url('../img/triangle-2.png');
+      bottom: -#{rem(109)};
+      right: 0;
+      
+      @media #{$medium-screen-and-below} {
+        content: none;
+      }
+    }
+    
+    .features-area__row:nth-of-type(2)::before {
+      content: url('../img/triangle-3.png');
+      left: rem(61);
+      bottom: -#{rem(90)};
+      
+      @media #{$medium-screen-and-below} {
+        content: none;
+      }
+    }
+    
+    .features-area__row:nth-of-type(2)::after {
+      content: url('../img/triangle-4.png');
+      bottom: 0;
+      left: rem(1050);
+      
+      @media #{$medium-screen-and-below} {
+        content: none;
+      }
+    }
+    
+    .features-area__col {
+      @media #{$medium-screen-and-below} {
+        text-align: center;
+      }
+    }
+    
+      .features-area__col p {
+        font-size: rem(20);
+        color: $outer-space;
+        width: rem(429);
+      }
