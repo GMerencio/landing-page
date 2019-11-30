@@ -1,0 +1,46 @@
+/*------------------------------------*\
+  #Testimonial-area
+\*------------------------------------*/
+
+.testimonial-area {
+  background-image: url('../img/testimonial.png');
+  height: rem(721);
+  padding-top:  rem(202);
+  padding-left: rem(161);
+  
+  p {
+    font-size:    rem(40);
+    font-weight:  700;
+    color: $alto;
+    width: rem(734);
+    
+    @media #{$small-screen-and-below} {
+      width: auto;
+    }
+  }
+  
+  .testimonial-area__name {
+    font-size:    rem(30);
+    font-weight:  700;
+    color: $purple-heart;
+  }
+  
+  @media (max-width: #{em(1300)}) {
+    background-size: contain;
+  }
+  
+  @media #{$medium-screen-and-below} {
+    background-image:   url('../img/testimonial-bg.png');
+    background-size:    cover;
+  }
+  
+  @media #{$small-screen-and-below} {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+  }
+}
