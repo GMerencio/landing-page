@@ -2,6 +2,24 @@
   #Text
 \*------------------------------------*/
 
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.txt-price {
+  position: relative;
+  font-size:    rem(29);
+  font-family:  'CaviarDreams Bold', sans-serif;
+  font-weight:  400;
+  
+  &::before {
+    position: relative;
+    content: '$';
+    font-size: rem(14);
+    top: -#{rem(10)};
+  }
+}
+
 .main-heading {
   font-size:    rem(38);
   font-weight:  600;
@@ -23,6 +41,27 @@
   @media #{$medium-screen-and-below} {
     margin-top: rem(30);
   }
+}
+
+.pricing-heading {
+  margin-top:     rem(83);
+  margin-bottom:  rem(118);
+  font-family:  'Coves Bold', sans-serif;
+  font-weight:  400;
+  font-size:    rem(50);
+  color: $persian-blue;
+  text-align: center;
+  
+  @media #{$small-screen-and-below} {
+    margin-top:     rem(20);
+    margin-bottom:  rem(20);
+  }
+}
+
+.pricing-opt-heading {
+  font-size:    rem(29);
+  font-family:  'Futura Bold', sans-serif;
+  font-weight:  400;
 }
 
 

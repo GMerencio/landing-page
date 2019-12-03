@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #Group-block
+\*------------------------------------*/
+
+.group-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  @media #{$small-screen-and-below} {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  .group-block__box {
+    display: flex;
+    flex-direction: column;
+    height: rem(500);
+    width: rem(310);
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(27.5);
+    color: $white;
+    font-size: rem(13);
+    font-family: 'Montserrat', sans-serif;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#821a80+0,c96cbb+100 */
+    background: #821a80; /* Old browsers */
+    background: -moz-linear-gradient(top, #821a80 0%, #c96cbb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #821a80 0%,#c96cbb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #821a80 0%,#c96cbb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821a80', endColorstr='#c96cbb',GradientType=0 ); /* IE6-9 */ 
+  }
+  
+  .group-block__box--special {
+    margin-left:  rem(33);
+    margin-right: rem(33);
+    height: rem(543);
+    width: rem(344);
+    
+    & .group-block__list {
+      margin-top: rem(45);
+    }
+  }
+  
+  .group-block__list {
+    font-family:  'CaviarDreams Bold', sans-serif;
+    font-size:    rem(15);
+    list-style: none;
+    padding: 0;
+    
+    @media #{$medium-screen-and-below} {
+      font-size: rem(20);
+    }
+  }
